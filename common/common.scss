@@ -20,6 +20,7 @@ body {
     background-size: auto;
   } @else {
     background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -28,7 +29,7 @@ tbody {
 }
 
 #main-outlet {
-  background: rgba($secondary, .95);
+  background: rgba($secondary, .97);
   border-radius: 8px;
   width: 75%;
   max-width: 930px;
