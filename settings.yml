@@ -9,4 +9,4 @@ no_background:
   type: bool
   default: false
   description:
-    en: Set no background
+    en: Set no background image. (Will ignore background_image and tile_background settings)
