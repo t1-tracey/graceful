@@ -54,6 +54,18 @@
     "danger": "f75200",
     "success": "76b242",
     "love": "fa6c8d"
-    }
+  },
+    "Snow": {
+    "primary": "222222",
+    "secondary": "ffffff",
+    "tertiary": "23d7e1",
+    "quaternary": "d393a7",
+    "header_background": "23d7e1",
+    "header_primary": "ffffff",
+    "highlight": "d4efd8",
+    "danger": "f8745c",
+    "success": "41e254",
+    "love": "fa6c8d"
+  }
   }
 }
