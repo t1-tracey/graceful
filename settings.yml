@@ -1,6 +1,12 @@
-background_image: 
+background_image:
   type: string
   default: default
   description: Enter image url or variable from "Uploads" section above
 
 tile_background: true
+
+no_background:
+  type: bool
+  default: false
+  description:
+    en: Set no background

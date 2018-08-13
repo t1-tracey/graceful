@@ -8,20 +8,27 @@
 
 body {
   background-color: $primary-very-low;
-  @if $background-image != "default"  {
-    background-image: url($background-image);
- } @else {
-    background-image: url($default-background);
+
+  @if $no-background == "false" {
+
+    @if $background-image != "default"  {
+      background-image: url($background-image);
+   } @else {
+      background-image: url($default-background);
+    }
+    // Default background pattern from Toptal Subtle Patterns
+    // ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/
+    background-attachment: fixed;
+    @if $tile-background == "true" {
+      background-size: auto;
+    } @else {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
   }
-  // Default background pattern from Toptal Subtle Patterns 
-  // ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/ 
-  background-attachment: fixed;
-  @if $tile-background == "true" {
-    background-size: auto;
-  } @else {
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+
+
 }
 
 tbody {
@@ -207,7 +214,7 @@ header.d-header {
   }
 }
 
-.user-main { 
+.user-main {
   .staff-counters {
     background: $tertiary-low;
     color: $tertiary;
@@ -288,7 +295,7 @@ span.user-title {
   border-radius: 4px;
 }
 
-// Select kit 
+// Select kit
 
 .select-kit.dropdown-select-box .dropdown-select-box-header {
   &:hover {
@@ -310,9 +317,9 @@ span.user-title {
   }
 }
 
-// Plugins 
+// Plugins
 
-// Babble 
+// Babble
 
 .babble-sidebar {
   height: calc(100% - 5.285em);
